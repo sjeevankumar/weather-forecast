@@ -1,0 +1,12 @@
+.searchbar-container {
+    margin-bottom: 2rem;
+}
+
+.searchbar-container .form-container>input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    text-transform: capitalize;
+    color: gray;
+}

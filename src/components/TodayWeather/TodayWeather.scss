@@ -1,0 +1,229 @@
+.today-weather-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    .twc-heading-container {
+        margin-bottom: 1.5rem;
+
+        h1 {
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .twc-info-container {
+        border: 1px solid gray;
+        border-radius: .4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+
+        .twcic-left-container {
+            display: flex;
+
+            .sun-status-container {
+                margin-right: 3rem;
+
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .moon-status-container {
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .twcic-right-container {
+            display: flex;
+            justify-content: space-between;
+
+            .twcicrc-item-container {
+                margin-right: 4rem;
+
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        .today-weather-container .twc-info-container {
+            border: 1px solid gray;
+            border-radius: 0.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-left-container .sun-status-container {
+            margin-right: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-left-container .sun-status-container p {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-left-container .moon-status-container p {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-right-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .today-weather-container .twc-info-container .twcic-right-container .twcicrc-item-container {
+            margin-right: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        .weekly-weather-container .wwc-top-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.4rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .weekly-weather-container .wwc-top-container .wwctc-days-name-container {
+            display: flex;
+            margin-bottom: 1rem;
+            overflow-x: scroll;
+            border-top-left-radius: 0rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width:1258px) {
+    body {
+        .today-weather-container .twc-info-container {
+            border: 1px solid gray;
+            border-radius: 0.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-left-container .sun-status-container {
+            margin-right: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-left-container .sun-status-container p {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-left-container .moon-status-container p {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .today-weather-container .twc-info-container .twcic-right-container .twcicrc-item-container {
+            margin-right: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        .weekly-weather-container .wwc-top-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.4rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .weekly-weather-container .wwc-top-container .wwctc-days-name-container {
+            display: flex;
+            margin-bottom: 1rem;
+            overflow-x: scroll;
+            border-top-left-radius: 0rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 581px) {
+    .hero-section-container .hsc-data-container .hscdc-top-container .hscdctc-left-container .hscdctclc-info-container h1 {
+        font-size: 2em;
+        margin-bottom: 0.3rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    body .today-weather-container .twc-info-container .twcic-right-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    body .today-weather-container .twc-info-container .twcic-right-container {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .hero-section-container .hsc-data-container .hscdc-top-container .hscdctc-right-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section-container .hsc-data-container .hscdc-top-container .hscdctc-right-container .hscdctcrc-item-container {
+        margin-left: 0em;
+    }
+
+    .hero-section-container .hsc-data-container .hscdc-bottom-container {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.553);
+        border-radius: .6em;
+        padding-left: 40%;
+    }
+
+    .hero-section-container .hsc-data-container .hscdc-bottom-container .hscdcbc-day-data-container .hscdcbcddc-img-cotainer {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: unset;
+    }
+
+    .hero-section-container .hsc-data-container .hscdc-bottom-container .hscdcbc-day-data-container {
+        margin-bottom: 1.5rem;
+    }
+
+    body .hero-section-container .hsc-data-container .hscdc-top-container {
+        border: 1px solid rgba(255, 255, 255, 0.553);
+        border-radius: .6em;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .hero-section-container .hsc-data-container .hscdc-top-container .hscdctc-left-container {
+        flex-wrap: wrap;
+    }
+
+    .hero-section-container .hsc-data-container .hscdc-top-container .hscdctc-left-container .hscdctclc-info-container h1 {
+        font-size: 2em;
+        margin-bottom: 0.3rem;
+        margin-right: 1rem;
+    }
+}

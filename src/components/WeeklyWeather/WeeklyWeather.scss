@@ -1,0 +1,62 @@
+.weekly-weather-container {
+    margin-top: 2rem;
+
+    .wwc-top-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.4rem;
+
+        .wwctc-days-name-container {
+            display: flex;
+            margin-bottom: 1rem;
+            border-top-left-radius: 1rem;
+
+            .active {
+                background-color: skyblue;
+            }
+
+            button {
+                font-size: 1rem;
+                border: 1px solid gray;
+                padding: .7rem 1rem;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+
+            :first-child {
+                border-bottom-left-radius: .3rem;
+                border-top-left-radius: .3rem;
+            }
+
+            :last-child {
+                border-bottom-right-radius: .3rem;
+                border-top-right-radius: .3rem;
+            }
+        }
+
+        .wwctc-right-container {
+            .active {
+                background-color: skyblue;
+            }
+
+            button {
+                padding: .2rem .3rem;
+                text-transform: capitalize;
+                border: 1px solid gray;
+                border-radius: .2rem;
+            }
+
+            button:hover {
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+
+    .wwc-table-container {
+        border: 1px solid gray;
+        border-radius: .4rem;
+    }
+}
